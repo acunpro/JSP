@@ -36,7 +36,7 @@ end
 
 function startBypass()
   gg.setVisible(false)
-  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌", "✔")
+  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌", "🆗")
   if bypassAlert == 3 then BPSS() end
   if bypassAlert == 2 then end
   if bypassAlert == 1 then bypassHelp() end
@@ -385,7 +385,7 @@ function MENUWH()
       WH8()
     end      
   if MWH[9] == true then
-      HOME()
+      WNC()
     end
   end
 end
@@ -729,7 +729,7 @@ function AIM()
       AM6()
     end       
   if AMB[7] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -743,7 +743,6 @@ function AM1()
   gg.editAll("9999999999", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Micro AimBot Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AM2()
   gg.clearResults()
@@ -760,7 +759,6 @@ function AM2()
   gg.editAll("-9999", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Medium AimBot Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AM3()
   gg.searchNumber("999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -781,7 +779,6 @@ function AM3()
   gg.editAll("38.5", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Ultra AimBot Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AM4()
   gg.clearResults()
@@ -795,7 +792,6 @@ function AM4()
   gg.setRanges(32)
   gg.clearResults()
   gg.toast("New Aimbot Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AM5()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -805,7 +801,6 @@ function AM5()
   gg.getResults(10)
   gg.editAll("-920", gg.TYPE_FLOAT)
   gg.toast("Aim Accuracy Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AM6()
   gg.clearResults()
@@ -828,7 +823,6 @@ function AM6()
   gg.editAll("1500", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Aim Head Aktif")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function ANNT()
   ANT = gg.multiChoice({
@@ -853,7 +847,7 @@ function ANNT()
       AT4()
     end   
   if ANT[5] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -863,7 +857,6 @@ function AT1()
   gg.getResults(3)
   gg.editAll("6666", gg.TYPE_FLOAT)
   gg.toast("Antenna Side Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AT2()
   gg.clearResults()
@@ -873,7 +866,6 @@ function AT2()
   gg.editAll("9621", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Antenna Up Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AT3()
   gg.clearResults()
@@ -895,7 +887,6 @@ function AT3()
   gg.editAll("19995", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Antenna Always Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function AT4()
   gg.clearResults()
@@ -906,7 +897,6 @@ function AT4()
   gg.editAll("3000", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("New Antenna Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function BULT()
   BUT = gg.multiChoice({
@@ -935,7 +925,7 @@ function BULT()
       BT5()
     end   
   if BUT[6] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -960,7 +950,6 @@ gg.getResults(10)
 gg.editAll("800", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Bullet Tracking Active")
-gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function BT2()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -971,7 +960,6 @@ function BT2()
   gg.editAll("0", gg.TYPE_FLOAT)
   gg.toast("Bullet Trough Wall Active")
   gg.clearResults()
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function BT3()
 gg.clearResults(Sukses)
@@ -982,7 +970,6 @@ print("Replaced: ", gg.editAll("0", gg.TYPE_FLOAT))
 gg.clearResults(850)
 gg.clearResults()
 gg.toast("NEW Bullet Trough Wall Active")
-gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function BT4()
   gg.setRanges(gg.REGION_C_BSS)
@@ -993,7 +980,6 @@ function BT4()
   gg.editAll("0", gg.TYPE_FLOAT)
   gg.toast("WallShot Active")
   gg.clearResults()
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function BT5()
   gg.clearResults()
@@ -1008,7 +994,6 @@ function BT5()
   gg.editAll("100000", gg.TYPE_DWORD)
   gg.clearResults()
   gg.toast("Increase Bullet Active")
-  gg.toast("𝐀𝐫𝐬𝐲𝐚𝐡 𝐆")
 end
 function CRM()
   CARM = gg.multiChoice({
@@ -1029,7 +1014,7 @@ function CRM()
       CARM3()
     end
   if CARM[4] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -1084,7 +1069,7 @@ if GNM[6] == true then AWM() end
 if GNM[7] == true then KAR98() end
 if GNM[8] == true then M24() end
 if GNM[9] == true then VSS() end
-if GNM[10] == true then HOME() end
+if GNM[10] == true then GEM() end
 end
 end
 
@@ -1203,7 +1188,7 @@ function HEAD()
       HO4()
     end  
   if HDS[5] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -1312,7 +1297,7 @@ function VIWM()
       VW8()
     end         
   if VW[9] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -1425,7 +1410,7 @@ function ZOMM()
       Z6()
     end       
   if ZM[7] == true then
-      HOME()
+      GEM()
     end
   end
 end
@@ -1537,7 +1522,7 @@ function Z5()
       MN10()
     end        
   if MNN[11] == true then
-      HOME()
+      GEM()
     end
   end
 end
