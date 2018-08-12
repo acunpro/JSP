@@ -910,13 +910,13 @@ function AT4()
 end
 function BULT()
   BUT = gg.multiChoice({
-  "1.📡 Bullet Tracking ",
-  "2.📡 Bullet Trough Wall ",
-  "3.📡 NEW Bullet Trough Wall ",
-  "4.📡 Wallshot ",
-  "5.📡 Increase Bullet ",
+  "1.⭕ Bullet Tracking ",
+  "2.⭕ Bullet Trough Wall ",
+  "3.⭕ NEW Bullet Trough Wall ",
+  "4.⭕ Wallshot ",
+  "5.⭕ Increase Bullet ",
   "🔙"
-  }, nil, "📡 Antenna Menu 📡")
+  }, nil, "⭕ Bullet Menu ⭕")
   if BUT == nil then
   else
   if BUT[1] == true then
@@ -1503,7 +1503,7 @@ function Z5()
     "9.🎲 [GAME] Big Player ",
     "10.🎲 [GAME] Small Player ",
     "🔙"
-  }, nil, "🎲 Zoom Menu 🎲")
+  }, nil, "🎲 Main Menu 🎲")
   if MNN == nil then
   else
   if MNN[1] == true then
