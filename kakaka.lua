@@ -1066,16 +1066,15 @@ GNM = gg.multiChoice({
 "1.🔫 Quick Speed Open Scope ",
 "2.🔫 Speed M416 ",
 "3.🔫 Speed Scar ",
-"4.🔫 AKM Fast Bullet ",
-"5.🔫 M16 Fast Bullet  ",
-"6.🔫 AWM Fast Bullet ",
-"7.🔫 98K Fast Bullet ",
-"8.🔫 M24 Fast Bullet ",
-"9.🔫 VSS Fast Bullet ",
+"4.🔫 Speed AKM ",
+"5.🔫 Speed M16  ",
+"6.🔫 Speed AWM ",
+"7.🔫 KAR 98 Power shot ",
+"8.🔫 M24 Power Shot ",
+"9.🔫 VSS Power Shot ",
 "🔙"
 },nil,"🔫 Gun Menu 🔫")
-if RF == nil then
-else
+if GNM == nil then else
 if GNM[1] == true then SB() end
 if GNM[2] == true then M4() end
 if GNM[3] == true then SCR() end
