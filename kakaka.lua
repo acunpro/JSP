@@ -53,7 +53,7 @@ function HOME()
     "🔳[MENU] Game ",
     "❌🔚❌",
     "📧 𝐀𝐫𝐬𝐲𝐚𝐡 𝐆 ",
-    "Update Info❗❗❗"  
+    "🔎Update Info❗"  
   }, nil, [[
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪  
 🔹🔹🔹🔹🗡 VIP ASG 0.7 🇮🇩🔹🔹🔹🔹
@@ -234,22 +234,24 @@ function C5()
   gg.toast("Body Yellow telah aktif")
 end
 function C6()
-gg.searchNumber(" 573.70306396484;0.05499718338;1 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
-gg.getResults(5000) 
-gg.editAll("999", gg.TYPE_FLOAT) gg.toast("50%")
-gg.clearResults(5000)
-gg.clearResults()
-gg.toast("Aktif")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("539,246,596;8200D;2.4903147e21F", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("8300", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("White aktif")
 end
 function C7()
-gg.searchNumber(" 573.70306396484;0.05499718338;1 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(" 1.0 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1200) gg.editAll("-999", gg.TYPE_FLOAT) 
-gg.toast("50%")
+gg.clearResults()
+gg.searchNumber(' 573.70306396484;0.05499718338;1 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(' 1.0 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+ gg.getResults(1200) gg.editAll('-999', gg.TYPE_FLOAT) 
+gg.toast('Loading Perfect Black')
 gg.clearResults(1200)
 gg.clearResults()
-gg.toast("Successful Activation")
+gg.toast("Black Active")
 end
 function C8()
 gg.clearResults()
@@ -578,6 +580,8 @@ function LOBB()
   "3.💢 New Magic Bullet V3 ",
   "4.💢 No Recoil ",
   "5.💢 Less Recoil ",
+  "6.💢 HOT Magic Bullet V4 ",
+  "7.💢 HOT Magic BUllet V5 ",
   "🔙"
   }, nil, "💢 Lobby Menu 💢")
   if LB == nil then
@@ -596,8 +600,14 @@ function LOBB()
     end
   if LB[5] == true then
       LBY5()
-    end    
+    end 
   if LB[6] == true then
+      LBY6()
+    end
+  if LB[7] == true then
+      LBY7()
+    end      
+  if LB[8] == true then
       HOME()
     end
   end
@@ -655,6 +665,26 @@ function LBY5()
   gg.editAll("0.5", gg.TYPE_FLOAT)
   gg.toast("Less Recoil telah aktif")
 end
+function LBY6()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(56)
+  gg.editAll("70", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Magic Bullet V54 Active")
+end  
+function LBY7()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("70", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Magic Bullet V5 Aktif")
+end 
 function GEM()
   GM = gg.multiChoice({
   "⏹AIMBOT",
@@ -1691,8 +1721,8 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗❗❗ \n \n 1:FIX function HeadOnlY \n \n 2: FIX Function Headshot \n \n :Enjoy Game With Cheat 🏁")
-  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3")
+  gg.alert("🆕 Update❗ \n \n 1:FIX function HeadOnlY \n \n 2: FIX Function Headshot \n\n ADD Function Magic BUllet V4 and V5 \n \n :Enjoy Game With Cheat 🏁")
+  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5")
 end  
 function EXIT()
   print(os.date("VIP Script PUBG MOBILE"))
