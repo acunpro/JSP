@@ -700,14 +700,14 @@ function GEM()
 end
 function AIM()
   AMB = gg.multiChoice({
-  "1.💧 Micro Aimbot ",
-  "2.💧 Medium Aimbot ",
-  "3.💧 Ultra Aimbot ",
-  "4.💧 New Aimbot ",
-  "5.💧 Aim Accuracy ",
-  "6.💧 Aim Head ",
+  "1.🌀 Micro Aimbot ",
+  "2.🌀 Medium Aimbot ",
+  "3.🌀 Ultra Aimbot ",
+  "4.🌀 New Aimbot ",
+  "5.🌀 Aim Accuracy ",
+  "6.🌀 Aim Head ",
   "🔙"
-  }, nil, "💧 Aimbot Menu 💧")
+  }, nil, "🌀 Aimbot Menu 🌀")
   if AMB == nil then
   else
   if AMB[1] == true then
@@ -1048,15 +1048,15 @@ function CARM3()
 end
 function GUNM()
 GNM = gg.multiChoice({
-"1.🔫 Quick Speed Open Scope ",
-"2.🔫 Speed M416 ",
-"3.🔫 Speed Scar ",
-"4.🔫 Speed AKM ",
-"5.🔫 Speed M16  ",
-"6.🔫 Speed AWM ",
-"7.🔫 KAR 98 Power shot ",
-"8.🔫 M24 Power Shot ",
-"9.🔫 VSS Power Shot ",
+"1.🔫[GAME] Quick Speed Open Scope ",
+"2.🔫[GAME] Speed M416 ",
+"3.🔫[GAME] Speed Scar ",
+"4.🔫[GAME] Speed AKM ",
+"5.🔫[GAME] Speed M16  ",
+"6.🔫[GAME] Speed AWM ",
+"7.🔫[GAME] KAR 98 Power shot ",
+"8.🔫[GAME] M24 Power Shot ",
+"9.🔫[GAME] VSS Power Shot ",
 "🔙"
 },nil,"🔫 Gun Menu 🔫")
 if GNM == nil then else
