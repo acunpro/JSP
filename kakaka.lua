@@ -82,6 +82,7 @@ end
 function WNC()
   WC = gg.multiChoice({
   "🔮WALLHACK MENU🔮",
+  "🔮COLOR SD 410-435 MENU🔮",
   "1.🌈 Green ",
   "2.🌈 Red ",
   "3.🌈 Pixel ",
@@ -97,7 +98,7 @@ function WNC()
   "13.🌈 White\n Global [Lobby] ",
   "14.🌈 Black\n Global [Lobby] ",
   "15.🌈 HOT Color ",
-  "16.🌈 Purple\n [SD 425-435]",
+  "16.🌈 Crystal Rainbow",
   "17.🌈 Rainbow ",
   "🔙"
   }, nil, "🌈 WH & Color Menu 🌈")
@@ -107,57 +108,60 @@ function WNC()
       MENUWH()
     end
   if WC[2] == true then
+      SDCL()
+    end  
+  if WC[3] == true then
       C1()
     end
-  if WC[3] == true then
+  if WC[4] == true then
       C2()
     end
-  if WC[4] == true then
+  if WC[5] == true then
       C3()
     end
-  if WC[5] == true then
+  if WC[6] == true then
       C4()
     end
-  if WC[6] == true then
+  if WC[7] == true then
       C5()
     end
-  if WC[7] == true then
+  if WC[8] == true then
       C6()
     end
-  if WC[8] == true then
+  if WC[9] == true then
       C7()
     end
-  if WC[9] == true then
+  if WC[10] == true then
       C8()
     end
-  if WC[10] == true then
+  if WC[11] == true then
       C9()
     end
-  if WC[11] == true then
+  if WC[12] == true then
       C10()
     end
-  if WC[12] == true then
+  if WC[13] == true then
       C11()
     end
-  if WC[13] == true then
+  if WC[14] == true then
       C12()
     end
-  if WC[14] == true then
+  if WC[15] == true then
       C13()
     end
-  if WC[15] == true then
+  if WC[16] == true then
       C14()
     end
-  if WC[16] == true then
+  if WC[17] == true then
       C15()
     end 
-  if WC[17] == true then
+  if WC[18] == true then
       C16()
     end
-  if WC[18] == true then
+  if WC[19] == true then
       C17()
     end
-  if WC[19] == true then
+  if WC[20] == true then
       HOME()
     end
   end
@@ -333,12 +337,15 @@ gg.editAll("222222", gg.TYPE_DWORD)
 gg.toast("HOT Color telah aktif")
 end
 function C16()
- gg.setRanges(gg.REGION_BAD)
  gg.clearResults()
- gg.searchNumber("589826", gg.TYPE_DWORD, false, gg.SING_EQUAL, 0, -1)
- gg.getResults(20050309)
- gg.editAll("673736", gg.TYPE_DWORD)
-gg.toast("purple SD 425-435 Aktif")
+ gg.setRanges(gg.REGION_BAD)
+ gg.searchNumber("8196;256;8204;256;8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+ gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+ gg.getResults(10)
+ gg.editAll("64", gg.TYPE_DWORD)
+ gg.clearResults()
+ gg.toast("Crystal Rainbow Aktif")
+ gg.clearResults()
 end
 function C17()
 gg.clearResults()
@@ -573,6 +580,71 @@ gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Wallhack Kirin Aktif")
 end
+function SDCL()
+  CLSD = gg.multiChoice({
+    "1.🎨 [GAME] Green ",
+    "2.🎨 [GAME] Red ",
+    "3.🎨 [GAME] Yellow ",
+    "4.🎨 [GAME] RGB ",  
+    "🔙"
+  }, nil, "🎨Color SD 410/435 Menu🎨")
+  if CLSD == nil then else
+  if CLSD[1] == true then CL1() end
+  if CLSD[2] == true then CL2() end
+  if CLSD[3] == true then CL3() end
+  if CLSD[4] == true then CL4() end  
+  if CLSD[5] == true then
+      WNC()
+    end
+  end
+end
+function CL1() 
+		gg.setRanges(gg.REGION_BAD) 
+		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
+		gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+	  gg.getResults(100) gg.editAll("589,840", gg.TYPE_DWORD) 
+	  gg.clearResults() 
+	  gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+	  gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+	  gg.getResults(100) gg.editAll("9", gg.TYPE_DWORD) 
+	  gg.toast("Body Green Aktif") 
+	end 
+	function CL2() 
+		gg.setRanges(gg.REGION_BAD) 
+		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
+		gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.getResults(100) gg.editAll("589,841", gg.TYPE_DWORD) 
+		gg.clearResults() gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.getResults(2) 
+		gg.editAll("9", gg.TYPE_DWORD) 
+		gg.toast("Body Red Aktif") 
+	end 
+	function CL3() 
+		gg.setRanges(gg.REGION_BAD) 
+		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.getResults(100) gg.editAll("589,830", gg.TYPE_DWORD) 
+    gg.clearResults() gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+	  gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+	  gg.getResults(2) 
+	  gg.editAll("9", gg.TYPE_DWORD) 
+	  gg.toast("Body Yellow Aktif") 
+	end 
+	function CL4() 
+		gg.setRanges(gg.REGION_BAD) 
+		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.getResults(100) 
+		gg.editAll("589,844", gg.TYPE_DWORD) 
+		gg.clearResults() 
+		gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+		gg.getResults(2) gg.editAll("9", gg.TYPE_DWORD) 
+		gg.toast("Body RGB Aktif") 
+  end
 function LOBB()
   LB = gg.multiChoice({
   "1.💢 New Magic Bullet ",
@@ -581,7 +653,7 @@ function LOBB()
   "4.💢 No Recoil ",
   "5.💢 Less Recoil ",
   "6.💢 HOT Magic Bullet V4 ",
-  "7.💢 HOT Magic BUllet V5 ",
+  "7.💢 HOT Magic BUllet V5 ",   
   "🔙"
   }, nil, "💢 Lobby Menu 💢")
   if LB == nil then
@@ -606,7 +678,7 @@ function LOBB()
     end
   if LB[7] == true then
       LBY7()
-    end      
+    end  
   if LB[8] == true then
       HOME()
     end
@@ -684,7 +756,7 @@ function LBY7()
   gg.editAll("70", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Magic Bullet V5 Aktif")
-end 
+end
 function GEM()
   GM = gg.multiChoice({
   "⏹AIMBOT",
@@ -1721,8 +1793,8 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:ADD Function Magic BUllet V4 and V5 \n \n :Enjoy Game With Cheat 🏁")
-  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n \n Enjoy Game With Cheat 🏁")
+  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
   print(os.date("VIP Script PUBG MOBILE"))
