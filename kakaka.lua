@@ -1487,7 +1487,8 @@ function Z5()
     "8.🎲 [GAME] High Jump ",
     "9.🎲 [GAME] Big Player ",
     "10.🎲 [GAME] Small Player ",
-    "11.🎲 [GAME] Visual Lift ",  
+    "11.🎲 [GAME] Visual Lift ", 
+    "12.🎲 [GAME] No Grass + Trees V2 ",  
     "🔙"
   }, nil, "🎲 Main Menu 🎲")
   if MNN == nil then
@@ -1524,8 +1525,11 @@ function Z5()
     end   
   if MNN[11] == true then
       MN11()
+    end 
+  if MNN[12] == true then
+      MN12()
     end  
-  if MNN[11] == true then
+  if MNN[13] == true then
       GEM()
     end
   end
@@ -1601,29 +1605,13 @@ function MN7()
   gg.toast("Long Jump telah aktif")
 end
 function MN8()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("7.1689529418945", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("3.4779739379883;2.8345839977264;3.1967880725861;3.8841888904572;3.1528658866882::208", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("3.4779739379883", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll("003,005,0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll("999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("0.73620933294296", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-gg.toast("HIGH Jump Active")
+  gg.clearResults(850)
+  gg.searchNumber("1;35;443;0.5;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(850)
+  print("Replaced: ", gg.editAll("0.5", gg.TYPE_FLOAT))
+  gg.clearResults(850)
+  gg.toast("High Jump Active")
 end
 function MN9()
   gg.clearResults()
@@ -1648,6 +1636,22 @@ function MN11()
   gg.getResults(100)
   gg.editAll("-999", gg.TYPE_FLOAT)
   gg.toast("Visual Lift Active")
+end
+function MN12()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2;10000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("0", gg.TYPE_FLOAT, FREEZE_NORMAL)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4.8883906e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("4.8883906e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("4.8883906e20", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("No Grass + Trees v2 Active")
 end
 function MC()
   KR = gg.choice({
