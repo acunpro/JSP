@@ -1487,6 +1487,7 @@ function Z5()
     "8.🎲 [GAME] High Jump ",
     "9.🎲 [GAME] Big Player ",
     "10.🎲 [GAME] Small Player ",
+    "11.🎲 [GAME] Visual Lift ",  
     "🔙"
   }, nil, "🎲 Main Menu 🎲")
   if MNN == nil then
@@ -1520,7 +1521,10 @@ function Z5()
     end
   if MNN[10] == true then
       MN10()
-    end        
+    end   
+  if MNN[11] == true then
+      MN11()
+    end  
   if MNN[11] == true then
       GEM()
     end
@@ -1636,6 +1640,14 @@ function MN10()
   gg.getResults(50)
   gg.editAll("0.6", gg.TYPE_FLOAT)
   gg.toast("Small Player Active")
+end
+function MN11()
+  gg.clearResults()
+  gg.searchNumber("0.1;1000;88;60;30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("-999", gg.TYPE_FLOAT)
+  gg.toast("Visual Lift Active")
 end
 function MC()
   KR = gg.choice({
