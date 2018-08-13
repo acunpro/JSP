@@ -36,7 +36,7 @@ end
 
 function startBypass()
   gg.setVisible(false)
-  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌", "🆗")
+  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌ \n [No]", "🆗 \n [Yes]")
   if bypassAlert == 3 then BPSS() end
   if bypassAlert == 2 then end
   if bypassAlert == 1 then bypassHelp() end
@@ -599,61 +599,63 @@ function SDCL()
   end
 end
 function CL1() 
-		gg.setRanges(gg.REGION_BAD) 
-		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
-		gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-	  gg.getResults(100) gg.editAll("589,840", gg.TYPE_DWORD) 
-	  gg.clearResults() 
-	  gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-	  gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-	  gg.getResults(100) gg.editAll("9", gg.TYPE_DWORD) 
-	  gg.toast("Body Green Aktif") 
-	end 
-	function CL2() 
-		gg.setRanges(gg.REGION_BAD) 
-		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
-		gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.getResults(100) gg.editAll("589,841", gg.TYPE_DWORD) 
-		gg.clearResults() gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.getResults(2) 
-		gg.editAll("9", gg.TYPE_DWORD) 
-		gg.toast("Body Red Aktif") 
-	end 
-	function CL3() 
-		gg.setRanges(gg.REGION_BAD) 
-		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.getResults(100) gg.editAll("589,830", gg.TYPE_DWORD) 
-    gg.clearResults() gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-	  gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-	  gg.getResults(2) 
-	  gg.editAll("9", gg.TYPE_DWORD) 
-	  gg.toast("Body Yellow Aktif") 
-	end 
-	function CL4() 
-		gg.setRanges(gg.REGION_BAD) 
-		gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.getResults(100) 
-		gg.editAll("589,844", gg.TYPE_DWORD) 
-		gg.clearResults() 
-		gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
-		gg.getResults(2) gg.editAll("9", gg.TYPE_DWORD) 
-		gg.toast("Body RGB Aktif") 
-  end
+gg.setRanges(gg.REGION_BAD) 
+gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
+gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(100) gg.editAll("589,840", gg.TYPE_DWORD) 
+gg.clearResults() 
+gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(100) gg.editAll("9", gg.TYPE_DWORD) 
+gg.toast("Body Green Aktif") 
+end 
+function CL2() 
+gg.setRanges(gg.REGION_BAD) 
+gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", 
+gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(100) gg.editAll("589,841", gg.TYPE_DWORD) 
+gg.clearResults()
+gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(2) 
+gg.editAll("9", gg.TYPE_DWORD) 
+gg.toast("Body Red Aktif") 
+end 
+function CL3() 
+gg.setRanges(gg.REGION_BAD) 
+gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(100) gg.editAll("589,830", gg.TYPE_DWORD) 
+gg.clearResults() 
+gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(2) 
+gg.editAll("9", gg.TYPE_DWORD) 
+gg.toast("Body Yellow Aktif") 
+end 
+function CL4() 
+gg.setRanges(gg.REGION_BAD) 
+gg.searchNumber("1,080,033,303;589,831;1,080,051,971:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,831", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(100) 
+gg.editAll("589,844", gg.TYPE_DWORD) 
+gg.clearResults() 
+gg.searchNumber("1,280;9;-2,144,337,911;589,830;1,081,104,896:17", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("589,830", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(2) gg.editAll("9", gg.TYPE_DWORD) 
+gg.toast("Body RGB Aktif") 
+end
 function LOBB()
   LB = gg.multiChoice({
-  "1.💢 New Magic Bullet ",
-  "2.💢 New Magic Bullet V2 ",
-  "3.💢 New Magic Bullet V3 ",
-  "4.💢 No Recoil ",
-  "5.💢 Less Recoil ",
+  "1.💢 No Recoil ",
+  "2.💢 Less Recoil ",
+  "3.💢 Magic Bullet ",
+  "4.💢 Magic Bullet V2",
+  "5.💢 Magic Bullet V3 ",
   "6.💢 HOT Magic Bullet V4 ",
-  "7.💢 HOT Magic BUllet V5 ",   
+  "7.💢 HOT Magic Bullet V5 ",   
   "🔙"
   }, nil, "💢 Lobby Menu 💢")
   if LB == nil then
@@ -686,36 +688,6 @@ function LOBB()
 end
 function LBY1()
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("75", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Magic Bullet telah aktif")
-end
-function LBY2()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.clearResults()
-  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(56)
-  gg.editAll("80", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Magic Bullet 2 telah aktif")
-end
-function LBY3()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("80", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Magic Bullet 3 telah aktif")
-end
-function LBY4()
-  gg.clearResults()
   gg.searchNumber("1868784978;1850305641;28518", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1868784978", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(1000)
@@ -728,7 +700,7 @@ function LBY4()
   gg.clearResults()
   gg.toast("No Recoil telah aktif")
 end
-function LBY5()
+function LBY2()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("1.4012985e-45;1;1;1;1;100000::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -736,6 +708,36 @@ function LBY5()
   gg.getResults(100)
   gg.editAll("0.5", gg.TYPE_FLOAT)
   gg.toast("Less Recoil telah aktif")
+end
+function LBY3()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("75", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Magic Bullet telah aktif")
+end
+function LBY4()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(56)
+  gg.editAll("80", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Magic Bullet V2 telah aktif")
+end
+function LBY5()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("80", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Magic Bullet V3 telah aktif")
 end
 function LBY6()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -745,7 +747,7 @@ function LBY6()
   gg.getResults(56)
   gg.editAll("70", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Magic Bullet V54 Active")
+  gg.toast("Magic Bullet V4 Active")
 end  
 function LBY7()
   gg.clearResults()
@@ -759,17 +761,17 @@ function LBY7()
 end
 function GEM()
   GM = gg.multiChoice({
-  "⏹AIMBOT",
-  "⏹ANTENNA",
-  "⏹BULLET",
-  "⏹CAR",
-  "⏹GUN",
-  "⏹HEAD",
-  "⏹VIEW",
-  "⏹ZOOM",
-  "⏹MAIN",    
+  "⏹ AIMBOT",
+  "⏹ ANTENNA",
+  "⏹ BULLET",
+  "⏹ CAR",
+  "⏹ GUN",
+  "⏹ HEAD",
+  "⏹ VIEW",
+  "⏹ ZOOM",
+  "⏹ MAIN",    
   "🔙"
-  }, nil, "🎲 Game Menu 🎲")
+  }, nil, "🎮 Game Menu 🎮")
   if GM == nil then
   else
   if GM[1] == true then
@@ -935,7 +937,8 @@ function ANNT()
   "1.📡 Antenna Side ",
   "2.📡 Antenna Up ",
   "3.📡 Antenna Always ",
-  "4.📡 New Antenna ",
+  "4.📡 Antenna Always V2",			
+  "5.📡 New Antenna ",
   "🔙"
   }, nil, "📡 Antenna Menu 📡")
   if ANT == nil then
@@ -951,8 +954,11 @@ function ANNT()
     end
   if ANT[4] == true then
       AT4()
-    end   
+    end
   if ANT[5] == true then
+      AT5()
+    end	
+  if ANT[6] == true then
       GEM()
     end
   end
@@ -974,6 +980,22 @@ function AT2()
   gg.toast("Antenna Up Active")
 end
 function AT3()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("0.53446006775F;-1.68741035461F:501", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1.68741035461", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1995)
+  gg.editAll("19995", gg.TYPE_FLOAT)
+  gg.toast("Antenna 50%")
+  gg.clearResults()
+  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1995)
+  gg.editAll("19995", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Antenna telah aktif ")
+end
+function AT4()
   gg.clearResults()
   gg.searchNumber("7.13142681122;0.53447723389;22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -992,9 +1014,9 @@ function AT3()
   gg.getResults(1995)
   gg.editAll("19995", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Antenna Always Active")
+  gg.toast("NEW Antenna Always Active")
 end
-function AT4()
+function AT5()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("7.13142681122;0.53447723389;22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1609,7 +1631,7 @@ function Z5()
     "8.🎲 [GAME] High Jump ",
     "9.🎲 [GAME] Big Player ",
     "10.🎲 [GAME] Small Player ",
-    "11.🎲 [GAME] Visual Lift ", 
+    "11.🎲 [GAME] Visual Lift V2", 
     "12.🎲 [GAME] No Grass + Trees V2 ",  
     "🔙"
   }, nil, "🎲 Main Menu 🎲")
