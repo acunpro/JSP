@@ -52,7 +52,8 @@ function HOME()
     "🔳[MENU] Lobby ",
     "🔳[MENU] Game ",
     "❌🔚❌",
-  "📧 𝐀𝐫𝐬𝐲𝐚𝐡 𝐆 "
+    "📧 𝐀𝐫𝐬𝐲𝐚𝐡 𝐆 ",
+    "Update Info❗❗❗"  
   }, nil, [[
 ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪  
 🔹🔹🔹🔹🗡 VIP ASG 0.7 🇮🇩🔹🔹🔹🔹
@@ -72,6 +73,9 @@ function HOME()
   end
   if HM == 5 then
     MC()
+  end
+  if HM == 6 then
+    UPD()
   end
   HOMEDM = -1
 end
@@ -1167,8 +1171,8 @@ gg.toast("Speed VSS Active")
 end
 function HEAD()
   HDS = gg.multiChoice({
-   "1.🚀 [GAME] HeadOnly\n open Scope ",
-    "2.🚀 [GAME] HeadShot\n open Scope ",
+   "1.🚀 [GAME] HeadOnly FIX \n open Scope ",
+    "2.🚀 [GAME] HeadShot FIX \n open Scope ",
     "3.🚀 [GAME] Auto hit\n 50%body 50%headshot ",
     "4.🚀 [GAME] NEW Headshot ",  
     "🔙"
@@ -1193,28 +1197,44 @@ function HEAD()
   end
 end
 function HO1()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.searchNumber('1.8764087e-40;1;1;2D ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(300)
-gg.editAll('1010', gg.TYPE_FLOAT)
-gg.toast('HeadOnly telah aktif')
+ gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("HaedOnly Aktif")
 end
 function HO2()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("460", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("560", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("HeadShot Aktif")
-gg.setVisible(false)
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("999999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("HaedShot Aktif")
 end
 function HO3()
   gg.clearResults()
@@ -1670,6 +1690,10 @@ function MC()
   end
   HOMEDM = -1
 end
+function UPD()
+  gg.alert("🆕 Update❗❗❗ \n \n 1:FIX function HeadOnlY \n \n 2: FIX Function Headshot \n \n :Enjoy Game With Cheat 🏁")
+  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3")
+end  
 function EXIT()
   print(os.date("VIP Script PUBG MOBILE"))
   print("\226\156\148\239\184\143Youtube Channel: Arsyah G")
