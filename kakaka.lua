@@ -1721,7 +1721,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n 1:FIX function HeadOnlY \n \n 2: FIX Function Headshot \n\n ADD Function Magic BUllet V4 and V5 \n \n :Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:ADD Function Magic BUllet V4 and V5 \n \n :Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5")
 end  
 function EXIT()
