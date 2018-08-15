@@ -36,7 +36,7 @@ end
 
 function startBypass()
   gg.setVisible(false)
-  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌ \n [No]", "🆗 \n [Yes]")
+  bypassAlert = gg.alert("Bypass Now?", "What is this?", "❌ \n[No]", "🆗 \n[Yes]")
   if bypassAlert == 3 then BPSS() end
   if bypassAlert == 2 then end
   if bypassAlert == 1 then bypassHelp() end
@@ -1412,7 +1412,7 @@ function VIWM()
     "6.🌄 [GAME] Off Sit Scope ",
     "7.🌄 [GAME] No Grass ",
     "8.🌄 [GAME] Extended Review ",
-    "9.🌄 [GAME] Black Sky SD 410-435 ",
+    "9.🌄 [GAME] Black Sky \n SD 410-435 ",
     "🔙"
   }, nil, "🌄View Menu🌄")
   if VW == nil then
@@ -1829,7 +1829,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n \n Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
