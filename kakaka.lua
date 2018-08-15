@@ -1412,7 +1412,7 @@ function VIWM()
     "6.🌄 [GAME] Off Sit Scope ",
     "7.🌄 [GAME] No Grass ",
     "8.🌄 [GAME] Extended Review ",
-    "9.🌄 [GAME] Black Sky \n SD 410-435 ",
+    "9.🌄 [GAME] Black Sky \n SD410-435 ",
     "🔙"
   }, nil, "🌄View Menu🌄")
   if VW == nil then
