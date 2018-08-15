@@ -1412,6 +1412,7 @@ function VIWM()
     "6.🌄 [GAME] Off Sit Scope ",
     "7.🌄 [GAME] No Grass ",
     "8.🌄 [GAME] Extended Review ",
+    "9.🌄 [GAME] Black Sky SD 410-435 ",
     "🔙"
   }, nil, "🌄View Menu🌄")
   if VW == nil then
@@ -1439,8 +1440,11 @@ function VIWM()
     end 
   if VW[8] == true then
       VW8()
-    end         
+    end 
   if VW[9] == true then
+      VW9()
+    end  
+  if VW[10] == true then
       GEM()
     end
   end
@@ -1523,6 +1527,16 @@ function VW8()
   gg.clearResults()
   gg.toast("Extended Review telah Aktif")
 end
+function VW9()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("1,120,403,456;0;1,220,861,952::9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,120,403,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("-1,027,211,264", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Black Sky Sd 410-435 Aktif")
+end  
 function ZOMM()
   ZM = gg.multiChoice({
     "1.🚫 [GAME] On X4 Zoom ",
