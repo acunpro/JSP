@@ -1299,6 +1299,7 @@ function HEAD()
     "2.🚀 [GAME] HeadShot FIX \n open Scope ",
     "3.🚀 [GAME] Auto hit\n 50%body 50%headshot ",
     "4.🚀 [GAME] NEW Headshot ",  
+    "5.🚀 [GAME] NEW Headshot V2 ",  
     "🔙"
   }, nil, "🚀Headshoot Menu🚀")
   if HDS == nil then
@@ -1314,8 +1315,11 @@ function HEAD()
     end
   if HDS[4] == true then
       HO4()
-    end  
+    end 
   if HDS[5] == true then
+      HO5()
+    end  
+  if HDS[6] == true then
       GEM()
     end
   end
@@ -1401,6 +1405,32 @@ function HO4()
   gg.editAll("999", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("NEW HaedShot Aktif")
+end
+function HO5()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges (gg.REGION_C_BSS)
+  gg.searchNumber('2048D;1F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll('0.07', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("New Headshot V2 Aktif")
 end
 function VIWM()
  VW = gg.multiChoice({
@@ -1833,7 +1863,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
