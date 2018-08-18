@@ -25,7 +25,7 @@ function BPSS()
   gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
   gg.clearResults(850)
-  gg.toast("Successful")
+  gg.toast("Successful 💯%")
 end
 
 function bypassHelp()
