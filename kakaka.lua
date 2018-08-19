@@ -1651,7 +1651,7 @@ function Z5()
   gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
   gg.editAll('131,120.0', gg.TYPE_FLOAT)
-  gg.toast('RedDot Aimbot telah aktif')
+  gg.toast('Red Dot Aimbot telah aktif')
  end
  function Z6()
   gg.setRanges(gg.REGION_ANONYMOUS)
