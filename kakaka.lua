@@ -95,7 +95,7 @@ function WNC()
   "10.🌈 Purple ",
   "11.🌈 (HDR) ",
   "12.🌈 Red (HDR) ",
-  "13.🌈 White\n Global [Lobby] ",
+  "13.🌈 White\n Global [Lobby]",
   "14.🌈 Black\n Global [Lobby] ",
   "15.🌈 HOT Color ",
   "16.🌈 Crystal Rainbow",
