@@ -55,10 +55,10 @@ function HOME()
     "📧 𝐀𝐫𝐬𝐲𝐚𝐡 𝐆 ",
     "▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫ \n 🔎Update Info❗ \n▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫"  
   }, nil, [[
-⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹    
+⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹    
 🔹🔹🔹🔹🗡 VIP ASG 0.7 🇮🇩🔹🔹🔹🔹
-🔹🔹🔹🔹   @OrangBias4   🔹🔹🔹🔹
-⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹]])
+🔹🔹🔹🔹    @OrangBias4   🔹🔹🔹🔹
+⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹]])
   if HM == 1 then
     WNC()
   end
@@ -363,12 +363,13 @@ function MENUWH()
   MWH = gg.multiChoice({
   "1.💠Wallhack [SD 835/845]",
   "2.💠Wallhack [SD 625]",
-  "3.💠Wallhack [Global]",
-  "4.💠Wallhack [SD 410/435]",
-  "5.💠Wallhack [SD 425/435]",
-  "6.💠Wallhack [SD 425/435 V2]",
-  "7.💠Wallhack [MEDIATEK]",
-  "8.💠Wallhack [KIRIN]",    
+  "3.💠Wallhack [SD 625 V2]",    
+  "4.💠Wallhack [Global]",
+  "5.💠Wallhack [SD 410/435]",
+  "6.💠Wallhack [SD 425/435]",
+  "7.💠Wallhack [SD 425/435 V2]",
+  "8.💠Wallhack [MEDIATEK]",
+  "9.💠Wallhack [KIRIN]",    
   "🔙"
   }, nil, "💠 Wallhack Menu 💠")
   if MWH == nil then
@@ -396,7 +397,10 @@ function MENUWH()
     end
   if MWH[8] == true then
       WH8()
-    end      
+    end  
+  if MWH[9] == true then
+      WH9()
+    end  
   if MWH[9] == true then
       WNC()
     end
@@ -475,9 +479,35 @@ function WH3()
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(30)
   gg.editAll("120", gg.TYPE_FLOAT)
+  gg.toast("Wallhack SD 625 V2 Aktif")
+end  
+function WH4()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-5.5693206e-40;4.814603e21;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.1848043e-44;-1.0285578e-38;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("304.00009155273;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
   gg.toast("WallHack Global Aktif")
 end
-function WH4()
+function WH5()
   gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("227;1073741824;1073741824;-1082130432;1073741824:29",gg.TYPE_DWORD,false,gg.SIGN_EQUAL, 0, -1)
@@ -492,7 +522,7 @@ function WH4()
   gg.toast("Wallhack SD 410-425 Aktif")
   gg.clearResults()
   end
-function WH5()
+function WH6()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -521,7 +551,7 @@ gg.clearResults()
 gg.toast("Wallhack SD 425-435 Aktif")
 gg.clearResults()
 end
-function WH6()
+function WH7()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -543,7 +573,7 @@ function WH6()
   gg.toast("100%")
   gg.toast("Wallhack 435/425 V2 Aktif")
 end
-function WH7()
+function WH8()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("8E;2.5;6.0255834e-44::150", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("2.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -559,7 +589,7 @@ gg.searchNumber("10000;0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) gg.sear
 gg.getResults(100)
 gg.editAll("0", gg.TYPE_FLOAT) gg.toast("Wallhack Mediatek Aktif")
 end
-function WH8()
+function WH9()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("2;-1;0;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1862,7 +1892,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
