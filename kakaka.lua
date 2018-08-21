@@ -58,7 +58,7 @@ function HOME()
 ⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹    
 🔹🔹🔹🔹🗡 VIP ASG 0.7 🇮🇩🔹🔹🔹🔹
 🔹🔹🔹🔹    @OrangBias4   🔹🔹🔹🔹
-⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹]])
+⏹⏹⏹ Selamat Idul Adha 1439 H ⏹⏹⏹]])
   if HM == 1 then
     WNC()
   end
@@ -362,14 +362,15 @@ end
 function MENUWH()
   MWH = gg.multiChoice({
   "1.💠Wallhack [SD 835/845]",
-  "2.💠Wallhack [SD 625]",
-  "3.💠Wallhack [SD 625 V2]",    
-  "4.💠Wallhack [Global]",
-  "5.💠Wallhack [SD 410/435]",
-  "6.💠Wallhack [SD 425/435]",
-  "7.💠Wallhack [SD 425/435 V2]",
-  "8.💠Wallhack [MEDIATEK]",
-  "9.💠Wallhack [KIRIN]",    
+  "2.💠Wallhack [SD 650/660]",    
+  "3.💠Wallhack [SD 625]",
+  "4.💠Wallhack [SD 625 V2]",    
+  "5.💠Wallhack [Global]",
+  "6.💠Wallhack [SD 410/435]",
+  "7.💠Wallhack [SD 425/435]",
+  "8.💠Wallhack [SD 425/435 V2]",
+  "9.💠Wallhack [MEDIATEK]",
+  "10.💠Wallhack [KIRIN]",    
   "🔙"
   }, nil, "💠 Wallhack Menu 💠")
   if MWH == nil then
@@ -401,7 +402,10 @@ function MENUWH()
   if MWH[9] == true then
       WH9()
     end  
-  if MWH[9] == true then
+  if MWH[10] == true then
+      WH9()
+    end   
+  if MWH[11] == true then
       WNC()
     end
   end
@@ -430,6 +434,40 @@ end
 function WH2()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;4.7777152e21;4.7777146e21",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(30)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,900,553;178;37;2F::",gg.TYPE_DWORD,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(20)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.25;3.75000071526;331,813D;2::",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(20)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("720,918;1,081,081,860;397,358;50,331,648;2F::",gg.TYPE_DWORD,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(20)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("671,236,101;1,074,790,406;178;12;2F::",gg.TYPE_DWORD,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.searchNumber("2",gg.TYPE_FLOAT,false,gg.SIGN_FUZZY_EQUAL,0,-1)
+gg.getResults(20)
+gg.editAll("120",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Wallhack SD 650/660 Active")
+end
+function WH3()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("1,900,553;178;37;2F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
@@ -455,7 +493,7 @@ gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Wallhack SD 625 Aktif")
 end
-function WH3()
+function WH4()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -481,7 +519,7 @@ function WH3()
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.toast("Wallhack SD 625 V2 Aktif")
 end  
-function WH4()
+function WH5()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -507,7 +545,7 @@ function WH4()
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.toast("WallHack Global Aktif")
 end
-function WH5()
+function WH6()
   gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("227;1073741824;1073741824;-1082130432;1073741824:29",gg.TYPE_DWORD,false,gg.SIGN_EQUAL, 0, -1)
@@ -522,7 +560,7 @@ function WH5()
   gg.toast("Wallhack SD 410-425 Aktif")
   gg.clearResults()
   end
-function WH6()
+function WH7()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -551,7 +589,7 @@ gg.clearResults()
 gg.toast("Wallhack SD 425-435 Aktif")
 gg.clearResults()
 end
-function WH7()
+function WH8()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -573,7 +611,7 @@ function WH7()
   gg.toast("100%")
   gg.toast("Wallhack 435/425 V2 Aktif")
 end
-function WH8()
+function WH9()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("8E;2.5;6.0255834e-44::150", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("2.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -589,7 +627,7 @@ gg.searchNumber("10000;0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) gg.sear
 gg.getResults(100)
 gg.editAll("0", gg.TYPE_FLOAT) gg.toast("Wallhack Mediatek Aktif")
 end
-function WH9()
+function WH10()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("2;-1;0;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1214,6 +1252,7 @@ GNM = gg.multiChoice({
 "7.🔫[GAME] KAR 98 Power shot ",
 "8.🔫[GAME] M24 Power Shot ",
 "9.🔫[GAME] VSS Power Shot ",
+"10.🔫[GAME] KAR 98 Power Shot V2 ",      
 "🔙"
 },nil,"🔫 Gun Menu 🔫")
 if GNM == nil then else
@@ -1226,7 +1265,8 @@ if GNM[6] == true then AWM() end
 if GNM[7] == true then KAR98() end
 if GNM[8] == true then M24() end
 if GNM[9] == true then VSS() end
-if GNM[10] == true then GEM() end
+if GNM[10] == true then KARV2() end    
+if GNM[11] == true then GEM() end
 end
 end
 
@@ -1321,6 +1361,17 @@ gg.getResults(100)
 gg.editAll("500000", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Speed VSS Active")
+end
+
+function KARV2()
+gg.toast("Kar98 Instant Kill is Working...")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("200000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Kar98 PowerShot V2 Active")
 end
 function HEAD()
   HDS = gg.multiChoice({
@@ -1706,6 +1757,7 @@ function Z5()
     "10.🎲 [GAME] Small Player ",
     "11.🎲 [GAME] Visual Lift V2 Fix", 
     "12.🎲 [GAME] No Grass + Trees V2 ",  
+    "13.🎲 [GAME] Small Crosshair ",    
     "🔙"
   }, nil, "🎲 Main Menu 🎲")
   if MNN == nil then
@@ -1745,8 +1797,11 @@ function Z5()
     end 
   if MNN[12] == true then
       MN12()
-    end  
+    end
   if MNN[13] == true then
+      MN13()
+    end 
+  if MNN[14] == true then
       GEM()
     end
   end
@@ -1874,6 +1929,14 @@ function MN12()
   gg.clearResults()
   gg.toast("No Grass + Trees v2 Active")
 end
+function MN13()
+gg.toast("Small Crosshair is Working...")
+gg.clearResults()
+gg.searchNumber('3.20000004768;1.09375', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0', gg.TYPE_FLOAT)
+gg.toast('Small Crosshair Active')
+end
 function MC()
   KR = gg.choice({
     "\226\156\137\239\184\143 Telegram: @OrangBias4",
@@ -1892,7 +1955,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n [9]:Add function Wallhack SD 650/660 \n\n [10]:Add Function Small Crosshair \n\n [11]:Add Function KAR98 PowerShot V2 \n\n Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
