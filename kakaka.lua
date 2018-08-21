@@ -1364,7 +1364,6 @@ gg.toast("Speed VSS Active")
 end
 
 function KARV2()
-gg.toast("Kar98 Instant Kill is Working...")
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1930,7 +1929,6 @@ function MN12()
   gg.toast("No Grass + Trees v2 Active")
 end
 function MN13()
-gg.toast("Small Crosshair is Working...")
 gg.clearResults()
 gg.searchNumber('3.20000004768;1.09375', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
