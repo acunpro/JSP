@@ -56,9 +56,9 @@ function HOME()
     "▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫ \n 🔎Update Info❗ \n▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫"  
   }, nil, [[
 ⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹    
-🔹🔹🔹🔹🗡 VIP ASG 0.7 🇮🇩🔹🔹🔹🔹
-🔹🔹🔹🔹    @OrangBias4   🔹🔹🔹🔹
-⏹⏹⏹ Selamat Idul Adha 1439 H ⏹⏹⏹]])
+🔹🔹🔹🔹🗡 VIP ASG 0.7.5 🇮🇩🔹🔹🔹🔹
+🔹🔹🔹🔹    @OrangBias4    🔹🔹🔹🔹
+]])
   if HM == 1 then
     WNC()
   end
@@ -755,17 +755,17 @@ function LOBB()
   end
 end
 function LBY1()
- gg.searchNumber("1868784978;1850305641;28518", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
- gg.searchNumber("1868784978", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
- gg.getResults(1000)
- gg.editAll("1868756421", gg.TYPE_DWORD)
- gg.clearResults()
- gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
- gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
- gg.getResults(1000)
- gg.editAll("100000", gg.TYPE_DWORD)
- gg.clearResults()
- gg.toast("No Recoil telah aktif")
+gg.searchNumber("1868784978;1850305641;28518", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1868784978", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("1868756421", gg.TYPE_DWORD)
+gg.clearResults()
+gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.editAll("100000", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("No Recoil telah aktif")
 end
 function LBY2()
   gg.clearResults()
@@ -812,7 +812,7 @@ function LBY6()
   gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("15;28;16;26;8;18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(56)
-  gg.editAll("70", gg.TYPE_FLOAT)
+  gg.editAll("73", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Magic Bullet V4 Active")
 end  
@@ -1481,7 +1481,7 @@ function HO4()
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
-  gg.editAll("999", gg.TYPE_FLOAT)
+  gg.editAll("888", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("NEW HaedShot Aktif")
 end
