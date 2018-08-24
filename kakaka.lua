@@ -36,7 +36,7 @@ end
 
 function startBypass()
   gg.setVisible(false)
-  bypassAlert = gg.alert("Bypass Now?", ".....❓ \nWhat is this?", "❌ \n[No]", "🆗 \n[Yes]")
+  bypassAlert = gg.alert("Bypass Now?", "....❓ \nWhat is this?", "❌ \n[No]", "🆗 \n[Yes]")
   if bypassAlert == 3 then BPSS() end
   if bypassAlert == 2 then end
   if bypassAlert == 1 then bypassHelp() end
