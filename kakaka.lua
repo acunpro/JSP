@@ -1376,10 +1376,10 @@ function HEAD()
   HDS = gg.multiChoice({
     "1.🚀 [GAME] HeadOnly FIX \n open Scope ",
     "2.🚀 [GAME] HeadShot FIX \n open Scope ",
-    "3.🚀 [GAME] Auto hit\n 50%body 50%headshot ",
+    "3.🚀 [GAME] AutoHit \n 50%body 50%headshot ",
     "4.🚀 [GAME] NEW Headshot ",  
     "5.🚀 [GAME] NEW Headshot V2 ",
-    "6.🚀 [GAME] Auto hit\n 90+++%headshot ",
+    "6.🚀 [GAME] AutoHit V2\n 90+++%headshot ",
     "🔙"
   }, nil, "🚀Headshoot Menu🚀")
   if HDS == nil then
@@ -1778,7 +1778,7 @@ function Z5()
  function MAN()
   MNN = gg.multiChoice({
     "1.🎲 [GAME] No Grass & Trees",
-    "2.🎲 [GAME] SpeedHack telah ",
+    "2.🎲 [GAME] SpeedHack ",
     "3.🎲 [GAME] Fast switch ",
     "4.🎲 [GAME] Fly ",
     "5.🎲 [GAME] Trass + No House ",
