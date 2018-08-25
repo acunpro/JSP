@@ -1810,6 +1810,7 @@ function Z5()
     "11.🎲 [GAME] Visual Lift V2 Fix", 
     "12.🎲 [GAME] No Grass + Trees V2 ",  
     "13.🎲 [GAME] Small Crosshair ",    
+    "14.🎲 [GAME] Move Speed ",  
     "🔙"
   }, nil, "🎲 Main Menu 🎲")
   if MNN == nil then
@@ -1854,6 +1855,9 @@ function Z5()
       MN13()
     end 
   if MNN[14] == true then
+      MN14()
+    end  
+  if MNN[15] == true then
       GEM()
     end
   end
@@ -1987,6 +1991,15 @@ gg.searchNumber('3.20000004768;1.09375', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0,
 gg.getResults(100)
 gg.editAll('0', gg.TYPE_FLOAT)
 gg.toast('Small Crosshair Active')
+end
+function MN14()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1;1;1;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll("1.04", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Move Speed Aktif")
 end
 function ONCLK()
   ONEC = gg.multiChoice({
@@ -2252,7 +2265,7 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n [9]:Add function Wallhack SD 650/660 \n\n [10]:Add Function Small Crosshair \n\n [11]:Add Function KAR98 PowerShot V2 \n\n [12]:Add Function AutoHit v2 \n\n [13]:Add New Menu One Clik to activate 4 Function Hack \n\n Enjoy Game With Cheat 🏁")
+  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n [9]:Add function Wallhack SD 650/660 \n\n [10]:Add Function Small Crosshair \n\n [11]:Add Function KAR98 PowerShot V2 \n\n [12]:Add Function AutoHit v2 \n\n [13]:Add New Menu One Clik to activate 4 Function Hack \n\n [14]:Add Function Move Speed in Main Mennu \n Enjoy Game With Cheat 🏁")
   gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
 end  
 function EXIT()
