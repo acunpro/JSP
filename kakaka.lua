@@ -2,8 +2,8 @@ gg.toast(os.date([[
 Today: %Y/%m/%d Time: %H:%M:%S
 www.youtube.com/c/ArsyahG]]))
 gg.alert("@𝐎𝐫𝐚𝐧𝐠𝐁𝐢𝐚𝐬𝟒")
-gg.toast("Untuk VIP Member hubungin saya Karna Saya akan Membuat Gruop vip \n dan Memindahkan coding ke server baru karna script sudah terbongkar Thanks")
-gg.toast("dear VIP Member contact me because I will make VIP Group \n and Move coding to the new server because the script has been uncovered \n Thanks")
+gg.alert("Untuk VIP Member hubungin saya Karna Saya akan Membuat Gruop vip \n dan Memindahkan coding ke server baru karna script sudah terbongkar Thanks")
+gg.alert("dear VIP Member contact me because I will make VIP Group \n and Move coding to the new server because the script has been uncovered \n Thanks")
 
 function BPSS()
 gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
@@ -55,7 +55,7 @@ function HOME()
     "🔳[MENU] One Click ",
     "❌🔚❌",
     "📧 𝐀𝐫𝐬𝐲𝐚𝐡 𝐆 ",
-    "▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫ \n 🔎Update Info❗ \n▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫"  
+    "▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫ \n 🔎READ ME❗ \n▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫▫"  
   }, nil, [[
 ⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹⏹    
 🔹🔹🔹🔹🗡 VIP ASG 0.7.5 🇮🇩🔹🔹🔹🔹
@@ -2266,9 +2266,9 @@ function MC()
   HOMEDM = -1
 end
 function UPD()
-  gg.alert("🆕 Update❗ \n \n [1]:FIX function HeadOnlY \n \n [2]:FIX Function Headshot \n\n [3]:Add Function Magic BUllet V4 and V5 \n \n [4]:Add 5 Function Body Color For SD410-435 \n\n [5]:Add Function Black Sky for Sd 410-435 \n \n [6]: Fix FuncTion Visual Lift \n\n [7]:Add Function New Headsho v2 \n\n [8]:Add Function Wallhack SD 625 v2 (Mata Janda) \n\n [9]:Add function Wallhack SD 650/660 \n\n [10]:Add Function Small Crosshair \n\n [11]:Add Function KAR98 PowerShot V2 \n\n [12]:Add Function AutoHit v2 \n\n [13]:Add New Menu One Clik to activate 4 Function Hack \n\n [14]:Add Function Move Speed in Main Mennu \n Enjoy Game With Cheat 🏁")
-  gg.alert("Don't Combo HeadShot and Headonly With: \n :Magic Bullet \n :Magic Bullet V2 \n :Magic Bullet V3 \n :Magic Bullet V4 \n :Magic Bullet V5 \n :All AimBot")
-end  
+ gg.alert("Untuk VIP Member hubungin saya Karna Saya akan Membuat Gruop vip \n dan Memindahkan coding ke server baru karna script sudah terbongkar Thanks")
+gg.alert("dear VIP Member contact me because I will make VIP Group \n and Move coding to the new server because the script has been uncovered \n Thanks")
+end
 function EXIT()
   print(os.date("VIP Script PUBG MOBILE"))
   print("\226\156\148\239\184\143Youtube Channel: Arsyah G")
